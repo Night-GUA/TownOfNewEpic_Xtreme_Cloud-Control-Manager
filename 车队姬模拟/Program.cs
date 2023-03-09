@@ -34,6 +34,7 @@ namespace 车队姬模拟
                 clientSocket.Send(buffer);
                 clientSocket.Close();
                 Console.WriteLine("\n执行完毕 请按Enter键退出");
+                Console.ReadLine();
             }
             else
             {
