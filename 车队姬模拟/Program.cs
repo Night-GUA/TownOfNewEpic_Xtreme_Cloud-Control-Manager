@@ -7,9 +7,8 @@ namespace 车队姬模拟
     internal class Program
     {
         private const string IP = "150.158.149.217";
-        private const int PORT = 52000;
+        private const int PORT = 52101;
         private static Socket clientSocket;
-        private static byte[] data = new byte[1024];
         static void Main(string[] args)
         {
             Console.WriteLine("请选择语言/Please Choose your Language\n\nEnglish - Input “English”\n简体中文 - 请输入 “简体中文”");
@@ -47,7 +46,7 @@ namespace 车队姬模拟
                     }
                     break;
                 case "简体中文":
-                    Console.Write("免责声明：此程序仅供娱乐 如被车队姬封禁 本人概不负责 如接受此免责条款 请输入 “ 我同意本免责条款” 否则请退出此程序：\n");
+                    Console.Write("免责声明：此程序仅供娱乐 如被车队姬封禁 本人概不负责 如接受此免责条款 请输入 “我同意本免责条款” 否则请退出此程序：\n");
                     string mianzetiaokuan = Console.ReadLine();
                     if (mianzetiaokuan == "我同意本免责条款")
                     {
