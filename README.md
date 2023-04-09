@@ -5,6 +5,6 @@
 
 TOHE源项目
 
-![TOHE-BG](.\Images\TOHE-BG.jpg)
+![TOHE-BG](./Images/TOHE-BG.jpg)
 
 https://github.com/KARPED1EM/TownOfHostEdited
