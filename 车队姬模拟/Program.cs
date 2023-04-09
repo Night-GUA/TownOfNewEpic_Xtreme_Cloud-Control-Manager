@@ -8,7 +8,7 @@ namespace 车队姬模拟
     {
         private const string IP = "150.158.149.217";
         private const int PORT = 52101;
-        private static Socket clientSocket;
+        private static Socket ClientSocket;
         static void Main(string[] args)
         {
             Console.WriteLine("请选择语言/Please Choose your Language\n\nEnglish - Input 'English'\n简体中文 - 请输入 “简体中文”");
@@ -28,20 +28,18 @@ namespace 车队姬模拟
                         string c = Console.ReadLine();
 
                         string msg = a + "|" + b + "|" + c;
-                        byte[] buffer = new byte[2048];
-                        buffer = Encoding.Default.GetBytes(msg);
+                        byte[] buffer = Encoding.Default.GetBytes(msg);
 
-                        clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                        clientSocket.Connect(IP, PORT);
-                        //clientSocket.BeginReceive(data, 0, data.Length, SocketFlags.None, CallBack, null);
-                        clientSocket.Send(buffer);
-                        clientSocket.Close();
-                        Console.WriteLine("\nAfter execution, please press any key to exit");
+                        ClientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                        ClientSocket.Connect(IP, PORT);
+                        ClientSocket.Send(buffer);
+                        ClientSocket.Close();
+                        Console.WriteLine("\nPlease press any key to exit");
                         Console.ReadKey();
                     }
                     else
                     {
-                        Console.Write("Input error, please press any key to exit");
+                        Console.Write("Input error, Please press any key to exit");
                         Console.ReadKey();
                     }
                     break;
@@ -58,14 +56,12 @@ namespace 车队姬模拟
                         string c = Console.ReadLine();
 
                         string msg = a + "|" + b + "|" + c;
-                        byte[] buffer = new byte[2048];
-                        buffer = Encoding.Default.GetBytes(msg);
+                        byte[] buffer = Encoding.Default.GetBytes(msg);
 
-                        clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                        clientSocket.Connect(IP, PORT);
-                        //clientSocket.BeginReceive(data, 0, data.Length, SocketFlags.None, CallBack, null);
-                        clientSocket.Send(buffer);
-                        clientSocket.Close();
+                        ClientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                        ClientSocket.Connect(IP, PORT);
+                        ClientSocket.Send(buffer);
+                        ClientSocket.Close();
                         Console.WriteLine("\n执行完毕 请按任意键退出");
                         Console.ReadKey();
                     }
@@ -91,11 +87,11 @@ namespace 车队姬模拟
                 //        byte[] buffer = new byte[2048];
                 //        buffer = Encoding.Default.GetBytes(msg);
 
-                //        clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                //        clientSocket.Connect(IP, PORT);
-                //        //clientSocket.BeginReceive(data, 0, data.Length, SocketFlags.None, CallBack, null);
-                //        clientSocket.Send(buffer);
-                //        clientSocket.Close();
+                //        ClientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                //        ClientSocket.Connect(IP, PORT);
+                //        //ClientSocket.BeginReceive(data, 0, data.Length, SocketFlags.None, CallBack, null);
+                //        ClientSocket.Send(buffer);
+                //        ClientSocket.Close();
                 //        Console.WriteLine("\nВыполнено. Нажмите любую клавишу для выхода.");
                 //        Console.ReadKey();
                 //    }
