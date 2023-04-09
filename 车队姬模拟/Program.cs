@@ -11,7 +11,7 @@ namespace 车队姬模拟
         private static Socket clientSocket;
         static void Main(string[] args)
         {
-            Console.WriteLine("请选择语言/Please Choose your Language\n\nEnglish - Input “English”\n简体中文 - 请输入 “简体中文”");
+            Console.WriteLine("请选择语言/Please Choose your Language\n\nEnglish - Input 'English'\n简体中文 - 请输入 “简体中文”");
             string language = Console.ReadLine();
             switch (language)
             {
@@ -75,6 +75,37 @@ namespace 车队姬模拟
                         Console.ReadKey();
                     }
                     break;
+                //case "Russian":
+                //    Console.Write("Отказ от ответственности: Программа предназначена только для развлечений. Если шоу запрещено, я безответственна. Чтобы принять это освобождение от ответственности, введите « Я согласен с этим освобождением от ответственности». В противном случае, пожалуйста, выйдите из этой программы：\n");
+                //    string mianzetiaokuanRU = Console.ReadLine();
+                //    if (mianzetiaokuanRU == "Я согласен с этим отказом")
+                //    {
+                //        Console.Write("Моделирование кода комнаты.：");
+                //        string a = Console.ReadLine();
+                //        Console.Write("Моделированная версия модуля：");
+                //        string b = Console.ReadLine();
+                //        Console.Write("Количество смоделированных：");
+                //        string c = Console.ReadLine();
+
+                //        string msg = a + "|" + b + "|" + c;
+                //        byte[] buffer = new byte[2048];
+                //        buffer = Encoding.Default.GetBytes(msg);
+
+                //        clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                //        clientSocket.Connect(IP, PORT);
+                //        //clientSocket.BeginReceive(data, 0, data.Length, SocketFlags.None, CallBack, null);
+                //        clientSocket.Send(buffer);
+                //        clientSocket.Close();
+                //        Console.WriteLine("\nВыполнено. Нажмите любую клавишу для выхода.");
+                //        Console.ReadKey();
+                //    }
+                //    else
+                //    {
+                //        Console.Write("Ошибка ввода. Нажмите любую клавишу для выхода");
+                //        Console.ReadKey();
+                //    }
+                //    break;
+                //too much bug for Russian language.set it unable
                 default:
                     Console.Write("Input wrong Language Code, please press any key to exit / 输入了错误的语言代码 请按任意键退出");
                     Console.ReadKey();
