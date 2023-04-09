@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using System.Net.Sockets;
 using System.Text;
 
@@ -77,13 +76,13 @@ namespace 车队姬模拟
                         Console.ReadKey();
                     }
                     break;
-                    default:
+                default:
                     Console.Write("Input wrong Language Code, please press any key to exit / 输入了错误的语言代码 请按任意键退出");
                     Console.ReadKey();
                     break;
             }
-            
-            
+
+
 
 
         }
