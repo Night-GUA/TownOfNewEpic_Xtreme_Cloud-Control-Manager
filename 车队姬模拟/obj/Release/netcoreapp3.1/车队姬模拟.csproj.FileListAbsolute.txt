@@ -1,0 +1,14 @@
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\bin\Release\netcoreapp3.1\车队姬模拟.exe
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\bin\Release\netcoreapp3.1\车队姬模拟.deps.json
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\bin\Release\netcoreapp3.1\车队姬模拟.runtimeconfig.json
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\bin\Release\netcoreapp3.1\车队姬模拟.runtimeconfig.dev.json
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\bin\Release\netcoreapp3.1\车队姬模拟.dll
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\bin\Release\netcoreapp3.1\车队姬模拟.pdb
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\obj\Release\netcoreapp3.1\车队姬模拟.csproj.AssemblyReference.cache
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\obj\Release\netcoreapp3.1\车队姬模拟.GeneratedMSBuildEditorConfig.editorconfig
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\obj\Release\netcoreapp3.1\车队姬模拟.AssemblyInfoInputs.cache
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\obj\Release\netcoreapp3.1\车队姬模拟.AssemblyInfo.cs
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\obj\Release\netcoreapp3.1\车队姬模拟.csproj.CoreCompileInputs.cache
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\obj\Release\netcoreapp3.1\车队姬模拟.dll
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\obj\Release\netcoreapp3.1\车队姬模拟.pdb
+D:\zhuomian\code\TONEX-Cloud-Control-Manager\车队姬模拟\obj\Release\netcoreapp3.1\车队姬模拟.genruntimeconfig.cache

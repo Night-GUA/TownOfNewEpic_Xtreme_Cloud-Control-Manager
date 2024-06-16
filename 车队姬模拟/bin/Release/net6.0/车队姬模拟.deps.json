@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "车队姬模拟/1.0.0": {
+        "runtime": {
+          "车队姬模拟.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "车队姬模拟/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -9,32 +9,43 @@ namespace 车队姬模拟
         private const string IP = "154.21.201.164";
         private const int PORT = 25455;
         private static Socket ClientSocket;
+        private static string a = "",b = "",c = "",d = "",e = "",f = "",msg = "";
         static void Main()
         {
             Console.Write("模拟的房间代码：");
-            string a = Console.ReadLine();
+            a = Console.ReadLine();
             Console.Write("模拟的模组版本：");
-            string b = Console.ReadLine();
+            b = Console.ReadLine();
             Console.Write("模拟的人数：");
-            string c = Console.ReadLine();
+            c = Console.ReadLine();
             Console.Write("模拟的语言id：");
-            string d = Console.ReadLine();
+            d = Console.ReadLine();
             Console.Write("模拟的服务器名字：");
-            string e = Console.ReadLine();
+            e = Console.ReadLine();
             Console.Write("模拟的房主名字：");
-            string f = Console.ReadLine();
+            f = Console.ReadLine();
 
-            string msg = a + "|" + b + "|" + c + "|" + d + "|" + e + "|" + f;
+#if RELEASE
+            b += " ByYuCDJ";
+#endif
+
+            msg = a + "|" + b + "|" + c + "|" + d + "|" + e + "|" + f;
+            SentMessage();
+            //Console.Write(msg);
+        }
+        static void SentMessage()
+        {
             byte[] buffer = Encoding.Default.GetBytes(msg);
 
             ClientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             ClientSocket.Connect(IP, PORT);
             ClientSocket.Send(buffer);
             ClientSocket.Close();
-            Console.Write("\n执行完毕 请按任意键退出");
+            Console.Write("\n执行完毕 按ENTER退出 输入JX继续发送本消息 输入CX发送新消息");
             string sf = Console.ReadLine();
-            if (sf == "1") Main();
+            if (sf == "CX") Main();
+            else if (sf == "JX") SentMessage();
             else Console.ReadKey();
-            }
         }
+    }
 }
